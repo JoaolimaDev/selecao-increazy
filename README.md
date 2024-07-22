@@ -25,6 +25,10 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 $ git clone https://github.com/JoaolimaDev/selecao-increazy
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd selecao-increazy
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose exec app php artisan migrate --force
+$ docker-compose exec app php artisan db:seed --class=UserSeeder --force
 ```
 
 ## ☕  Swagger disponível :

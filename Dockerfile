@@ -18,11 +18,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 RUN composer install --no-plugins --no-scripts
 
-RUN php artisan migrate --force
-
 EXPOSE 3000
-
-RUN php artisan db:seed --class=UserSeeder --force
 
 # Inicia o servidor de desenvolvimento PHP
 CMD php artisan serve --host=0.0.0.0 --port=3000
