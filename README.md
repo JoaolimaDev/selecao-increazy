@@ -18,7 +18,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
   A porta 3000 será mapeada para o projeto, a porta 5432 para o POSTGRES, assegure que ambas estejam disponíveis,
   antes das operações com a api VIACEP, autêntique a sessão com o usuário fornecido no swagger.
 
-## 🚀 Instalação
+## 🚀 Instalação e execução
 
 ```bash
 # Clone este repositório
@@ -29,6 +29,7 @@ $ docker-compose build
 $ docker-compose up -d
 $ docker-compose exec app php artisan migrate --force
 $ docker-compose exec app php artisan db:seed --class=UserSeeder --force
+$ docker run selecao-increazy_app
 ```
 
 ## ☕  Swagger disponível :
