@@ -13,13 +13,13 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /var/www/html
 
 # Copia os arquivos do aplicativo Laravel
-# COPY . .
+COPY . .
 
-# RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# RUN composer install --no-plugins --no-scripts
+RUN composer install --no-plugins --no-scripts
 
-# EXPOSE 3000
+EXPOSE 3000
 
-# # Inicia o servidor de desenvolvimento PHP
-# CMD php artisan serve --host=0.0.0.0 --port=3000
+# Inicia o servidor de desenvolvimento PHP
+CMD php artisan serve --host=0.0.0.0 --port=3000
