@@ -15,7 +15,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Docker version 26+
 
 ## 📜 Observações
-  A porta 3000 será mapeada para o projeto, a porta 5432 para o POSTGRES, assegure que ambas estejam disponíveis.
+  A porta 3000 será mapeada para o projeto, a porta 5432 para o POSTGRES, assegure que ambas estejam disponíveis,
+  antes das operações com a api VIACEP, autêntique a sessão com o usuário fornecido no swagger.
 
 ## 🚀 Instalação
 
